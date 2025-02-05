@@ -1,0 +1,466 @@
+{
+	"info": {
+		"_postman_id": "4164277b-1450-4f60-83d0-f9477ef86edc",
+		"name": "api-crud-recipesApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38027881"
+	},
+	"item": [
+		{
+			"name": "get a recipe by id",
+			"item": [
+				{
+					"name": "pasta got by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes/67a323f9ad0b43d0a98cb1fc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes",
+								"67a323f9ad0b43d0a98cb1fc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "spagetti got by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes/67a324bfad0b43d0a98cb1ff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes",
+								"67a324bfad0b43d0a98cb1ff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "choco cookies got by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes/67a325cdad0b43d0a98cb205",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes",
+								"67a325cdad0b43d0a98cb205"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "get all recipes",
+			"item": [
+				{
+					"name": "beef-tacos",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "create a recipe",
+			"item": [
+				{
+					"name": "http://localhost:1200/api/recipes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Classic Spaghetti Carbonara\",\r\n    \"ingredients\": [\r\n        \"Spaghetti\",\r\n        \"Eggs\",\r\n        \"Parmesan Cheese\",\r\n        \"Pancetta\",\r\n        \"Garlic\",\r\n        \"Black Pepper\"\r\n    ],\r\n    \"instructions\": \"1. Cook spaghetti according to package instructions. 2. Fry pancetta and garlic until crispy. 3. Mix eggs and Parmesan cheese in a bowl. 4. Combine cooked spaghetti with pancetta, then mix in the egg and cheese mixture. 5. Serve immediately with extra Parmesan and black pepper.\",\r\n    \"cookingTime\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:1200/api/recipes",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Classic Spaghetti Carbonara\",\r\n    \"ingredients\": [\r\n        \"Spaghetti\",\r\n        \"Eggs\",\r\n        \"Parmesan Cheese\",\r\n        \"Pancetta\",\r\n        \"Garlic\",\r\n        \"Black Pepper\"\r\n    ],\r\n    \"instructions\": \"1. Cook spaghetti according to package instructions. 2. Fry pancetta and garlic until crispy. 3. Mix eggs and Parmesan cheese in a bowl. 4. Combine cooked spaghetti with pancetta, then mix in the egg and cheese mixture. 5. Serve immediately with extra Parmesan and black pepper.\",\r\n    \"cookingTime\": 30\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:1200/api/recipes",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Chicken Tikka Masala\",\r\n    \"ingredients\": [\r\n        \"Chicken Breast\",\r\n        \"Yogurt\",\r\n        \"Tomato Puree\",\r\n        \"Onion\",\r\n        \"Garlic\",\r\n        \"Ginger\",\r\n        \"Spices (Cumin, Coriander, Turmeric, Garam Masala)\",\r\n        \"Cream\"\r\n    ],\r\n    \"instructions\": \"1. Marinate chicken in yogurt and spices for 1 hour. 2. Grill or bake the chicken until cooked. 3. Sauté onions, garlic, and ginger. 4. Add tomato puree and spices, then simmer. 5. Add grilled chicken and cream, and cook for 10 minutes. 6. Serve with rice or naan.\",\r\n    \"cookingTime\": 60\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:1200/api/recipes",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Chocolate Chip Cookies\",\r\n    \"ingredients\": [\r\n        \"Flour\",\r\n        \"Butter\",\r\n        \"Sugar\",\r\n        \"Eggs\",\r\n        \"Vanilla Extract\",\r\n        \"Baking Soda\",\r\n        \"Chocolate Chips\"\r\n    ],\r\n    \"instructions\": \"1. Preheat oven to 350°F (175°C). 2. Mix butter, sugar, eggs, and vanilla. 3. Add flour and baking soda, then fold in chocolate chips. 4. Drop spoonfuls of dough onto a baking sheet. 5. Bake for 10-12 minutes. 6. Let cool before serving.\",\r\n    \"cookingTime\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "stirfry-veggies",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Vegetable Stir-Fry\",\r\n    \"ingredients\": [\r\n        \"Broccoli\",\r\n        \"Carrots\",\r\n        \"Bell Peppers\",\r\n        \"Snap Peas\",\r\n        \"Soy Sauce\",\r\n        \"Garlic\",\r\n        \"Ginger\",\r\n        \"Sesame Oil\"\r\n    ],\r\n    \"instructions\": \"1. Heat sesame oil in a wok. 2. Add garlic and ginger, then stir-fry for 1 minute. 3. Add chopped vegetables and stir-fry until tender. 4. Add soy sauce and cook for another 2 minutes. 5. Serve with rice or noodles.\",\r\n    \"cookingTime\": 25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "beef-tacos",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Beef Tacos\",\r\n    \"ingredients\": [\r\n        \"Ground Beef\",\r\n        \"Taco Seasoning\",\r\n        \"Tortillas\",\r\n        \"Lettuce\",\r\n        \"Tomatoes\",\r\n        \"Cheese\",\r\n        \"Sour Cream\"\r\n    ],\r\n    \"instructions\": \"1. Brown ground beef in a pan. 2. Add taco seasoning and water, then simmer. 3. Warm tortillas in a skillet. 4. Assemble tacos with beef, lettuce, tomatoes, cheese, and sour cream. 5. Serve immediately.\",\r\n    \"cookingTime\": 20\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "delete a recipe",
+			"item": [
+				{
+					"name": "deleted beef-tacos",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes/67a3266dad0b43d0a98cb209",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes",
+								"67a3266dad0b43d0a98cb209"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "update a recipe",
+			"item": [
+				{
+					"name": "choco-choco cookies name change",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"choco-choco cookies\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes/67a325cdad0b43d0a98cb205",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes",
+								"67a325cdad0b43d0a98cb205"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "spagetti carbonara name & cookingTime updated",
+					"request": {
+						"auth": {
+							"type": "inherit"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\":\"British Carbonara\",\r\n    \"cookingTime\":120\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1200/api/recipes/67a324bfad0b43d0a98cb1ff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1200",
+							"path": [
+								"api",
+								"recipes",
+								"67a324bfad0b43d0a98cb1ff"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
