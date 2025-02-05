@@ -14,7 +14,7 @@ app.use(express.json());
 //Routes
 app.use('/api/recipes', recipeRoutes);
 
-//Connect to MongoDB
+//Connect to MongoDBegijerogij
 mongoose.connect(process.env.MONGO_URI)
 .then(()=> {
     console.log('Connected to MongoDB');
