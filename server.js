@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 //Routes
-app.use('/api/recipes', recipeRoutes);
+app.use('/api/recipe', recipeRoutes);
 
 //Connect to MongoDBegijerogij
 mongoose.connect(process.env.MONGO_URI)
